@@ -1,7 +1,6 @@
-%h1 New Article
+%h1 Edit article
 
-= form_with scope: :article, url: articles_path, local: true do |form|
-  
+= form_with(model: @article, local: true) do |form|
   - if @article.errors.any?
     #error_explanation
       %h2
@@ -10,16 +9,15 @@
       %ul
         - @article.errors.full_messages.each do |msg|
           %li= msg
-
   %p
     = form.label :title
     %br/
-    = form.text_field :title 
+    = form.text_field :title
   %p
     = form.label :content
     %br/
     = form.text_area :content
   %p
     = form.submit
-
+    
 = link_to 'Back', articles_path
