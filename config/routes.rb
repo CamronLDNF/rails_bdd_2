@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   # http://localhost:3000/articles/index to the 
   # articles controller's index action.
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   root controller: :articles, action: :index
   # this tells Rails to map requests to the root of the 
