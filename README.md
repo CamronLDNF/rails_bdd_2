@@ -9,7 +9,8 @@ Languages & frameworks & tools used:
 * HAML
 
 Testing environment:
-* Rspec, Capybara
+* Rspec with shoulda-matchers library
+* Cucumber with Capybara
 
 ## How to test
 -------

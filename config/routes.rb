@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  get 'articles/index'
-  # this tells Rails to map requests to 
-  # http://localhost:3000/articles/index to the 
-  # articles controller's index action.
-
+  
   resources :articles do
     resources :comments
   end
