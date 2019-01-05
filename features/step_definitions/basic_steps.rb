@@ -12,6 +12,6 @@ When("I click {string}") do |link|
   click_link_or_button link
 end
 
-When("I fill in {string} with {string}") do |field, value|
-  fill_in field, with: value
+When("I fill in {string} with {string}") do |input_field, input_value|
+  fill_in input_field, with: input_value
 end
