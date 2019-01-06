@@ -2,6 +2,8 @@
 -------
 This repo contains [the Getting Started exercise](https://guides.rubyonrails.org/getting_started.html) for Rails.
 
+You can view the app [here](https://stormy-peak-15203.herokuapp.com).
+
 ## Tech stack
 -------
 Languages & frameworks & tools used:
